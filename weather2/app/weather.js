@@ -11,7 +11,7 @@ weather.service('weather_service', function ($http) {
             url: "http://api.openweathermap.org/data/2.5/weather",
             params: {
                 q: name,
-                appid: '82a39b7be49fbd61caff37f224ae5d22',
+                appid: 'key',
                 units: 'metric'
             }
 
