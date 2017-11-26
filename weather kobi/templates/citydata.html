@@ -1,0 +1,14 @@
+<div ng-controller="weatherCtrl">
+    <input ng-model='cityName'>
+    <button ng-click='viewWeather()'>View climate data</button>
+    <ul ng-if="climateData.main">
+            <li>Temp: {{climateData.main.temp}}</li>
+            <li>City: {{climateData.name}}</li>
+    </ul>
+    <p>
+
+        
+        <br>
+        {{ climateData | json}}
+    </p>
+</div>
