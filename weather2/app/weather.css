@@ -1,0 +1,17 @@
+
+    .mybook{
+    float: left;
+    margin: 20px;
+    padding: 20px;
+    background-color:white;
+
+    }
+
+    body {
+        background-color: rgb(206, 198, 198);
+    }
+    
+    img{
+        margin-bottom: 15px;
+
+    }

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" ng-app="weather">
+
+<head>
+        
+    <script src="../node_modules/angular/angular.min.js"></script>
+    <script src="../node_modules/angular-route/angular-route.min.js"></script>    
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"></script>
+    <link href="../node_modules/bootstrap/dist/js/bootstrap.min.js" rel="stylesheet"></script>
+    <link href="weather.css" rel="stylesheet"></script>
+    <script src="weather.js"></script>
+    
+            
+            
+
+</head>
+<body>
+<div ng-controller="navcontroller">
+    <header >
+            <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                      <div class="navbar-header">
+                        <a class="navbar-brand" href="#">MY WEATHER</a>
+                      </div>
+                      <ul class="nav navbar-nav">
+                        <li class="active"><a href="#!london">LONDON</a></li>
+                        <li><a href="#!newYork" ng-click="getwetherNewYork()">NEW YORK</a></li>                        
+                        <li> <a href="#!jerusalem">JERUSALEM</a></li>
+
+                      </ul>
+                    </div>
+                  </nav>
+    </header>
+</div>
+
+    <div ng-controller="findWeather">
+            <input placeholder="city name" ng-model="city">
+            <a href="#!weatherfind"><button ng-click="getwether()" class="btn btn-primary">
+                <span class="glyphicon"> </span> send
+            </button></a>
+    </div>
+    
+
+    <div ng-view></div>
+
+
+        
+
+    <footer>
+        <div ad></div>
+    </footer>
+
+
+
+</body>
+
+</html>
